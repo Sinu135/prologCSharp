@@ -1,6 +1,6 @@
 % ===============================================
 % Autor: Velazquez Duran Sinuhe de Jesus
-% Fecha: 17 de octubre de 2024
+% Fecha: 21 de octubre de 2024
 % Descripción: Recibe una lista codificada con el formato (X, N) y los expande en su numero de elementos.
 % ===============================================
 

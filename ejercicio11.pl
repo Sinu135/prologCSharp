@@ -1,6 +1,6 @@
 % ===============================================
 % Autor: Velazquez Duran Sinuhe de Jesus
-% Fecha: 17 de octubre de 2024
+% Fecha: 21 de octubre de 2024
 % Descripción: Recibe una lista. Si hay elementos duplicados, lo reemplaza por el formato (X,N) donde N es el numero de elementos. Si no tiene duplicados, lo agrega directamente.
 % ===============================================
 

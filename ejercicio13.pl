@@ -1,6 +1,6 @@
 % ===============================================
 % Autor: Velazquez Duran Sinuhe de Jesus
-% Fecha: 17 de octubre de 2024
+% Fecha: 21 de octubre de 2024
 % Descripción: Agrupa los elementos consecutivos en parejas (N, X) donde N es la cantidad de elementos
 % ===============================================
 
