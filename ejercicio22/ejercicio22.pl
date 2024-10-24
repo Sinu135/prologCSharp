@@ -48,4 +48,6 @@
 range(I, I, [I]).
 % Caso recursivo: agrega el inicio a la lista y continúa con el siguiente número.
 range(I, K, [I|R]) :- I < K, I1 is I + 1, range(I1, K, R).
+% Ejemplo de uso:
+% range(3, 7, R), writeln(R), halt.
 % ----------------------------------------------

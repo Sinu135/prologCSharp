@@ -56,4 +56,6 @@ compress([X], [X]).
 compress([X,X|T], R) :- compress([X|T], R).
 % Si el primer y segundo elemento son distintos, conserva el primero.
 compress([X,Y|T], [X|R]) :- X \= Y, compress([Y|T], R).
+% Ejemplo de uso:
+% compress([a,a,b,b,c,a,a,a,d], R), write(R), nl, halt.
 % ----------------------------------------------

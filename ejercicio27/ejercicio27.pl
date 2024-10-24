@@ -115,4 +115,6 @@ combination(K, [_|T], Comb) :- K > 0, combination(K, T, Comb).
 % Agrupa los elementos de un conjunto en subconjuntos disjuntos dados los tamaños de los subgrupos.
 group([], [], []).
 group([N|Ns], Es, [G|Gs]) :- combination(N, Es, G), subtract(Es, G, Rest), group(Ns, Rest, Gs).
+% Ejemplo de uso:
+% group([2, 2], [a, b, c, d], G), writeln(G), halt.
 % ----------------------------------------------

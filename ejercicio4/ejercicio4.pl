@@ -40,4 +40,6 @@
 list_length([], 0).
 % Caso recursivo: la longitud es 1 más que la longitud de la cola.
 list_length([_|T], N) :- list_length(T, N1), N is N1 + 1.
+% Ejemplo de uso:
+% list_length([1,2,3,4], N), write(N), nl, halt.
 % ----------------------------------------------

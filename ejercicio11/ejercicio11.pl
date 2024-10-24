@@ -140,4 +140,6 @@ modify([], []).
 modify([[1,X]|T], [X|R]) :- modify(T, R).
 % Si hay más de un elemento, mantén el formato (N, X).
 modify([[N,X]|T], [[N,X]|R]) :- N > 1, modify(T, R).
+% Ejemplo de uso:
+% encode_modified([a, a, b, b, c, c, c, a, a], R), writeln(R), halt.
 % ----------------------------------------------

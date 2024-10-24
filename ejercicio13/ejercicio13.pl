@@ -82,4 +82,6 @@ encode_direct([X|Xs], [[N,X]|R]) :- count(X, [X|Xs], N, Rest), encode_direct(Res
 count(_, [], 0, []).
 count(X, [X|Xs], N, Rest) :- count(X, Xs, N1, Rest), N is N1 + 1.
 count(X, [Y|Ys], 0, [Y|Ys]) :- X \= Y.
+% Ejemplo de uso:
+% encode_direct([a, a, b, b, c, c, c, a, a], R), writeln(R), halt.
 % ----------------------------------------------

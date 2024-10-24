@@ -38,4 +38,6 @@
 % La lista debe tener al menos dos elementos.
 penultimate(X, [X, _]).
 penultimate(X, [_|T]) :- penultimate(X, T).
+% Ejemplo de uso:
+% penultimate(X, [1, 2, 3, 4]), write(X), nl, halt.
 % ----------------------------------------------

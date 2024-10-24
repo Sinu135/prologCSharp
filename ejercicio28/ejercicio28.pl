@@ -46,4 +46,6 @@
 % -------- Código en Prolog --------------------
 % Ordena una lista de listas de acuerdo con la longitud de las sublistas.
 lsort(L, S) :- map_list_to_pairs(length, L, P), keysort(P, SP), pairs_values(SP, S).
+% Ejemplo de uso:
+% lsort([[a], [b, c], [d, e, f]], S), writeln(S), halt.
 % ----------------------------------------------

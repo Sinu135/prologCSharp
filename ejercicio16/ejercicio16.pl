@@ -67,4 +67,6 @@ drop([], _, _, []).
 drop([_|T], 1, N, R) :- drop(T, N, N, R).
 % Caso recursivo: disminuye el contador y conserva el elemento.
 drop([H|T], K, N, [H|R]) :- K > 1, K1 is K - 1, drop(T, K1, N, R).
+% Ejemplo de uso:
+% drop([a, b, c, d, e, f, g, h], 3, R), writeln(R), halt.
 % ----------------------------------------------

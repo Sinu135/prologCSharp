@@ -49,4 +49,6 @@ reverse_list(L, R) :- reverse_list(L, [], R).
 reverse_list([], Acc, Acc).
 % Caso recursivo: mueve el elemento de la cabeza al acumulador.
 reverse_list([H|T], Acc, R) :- reverse_list(T, [H|Acc], R).
+% Ejemplo de uso:
+% reverse_list([1,2,3], R), write(R), nl, halt.
 % ----------------------------------------------

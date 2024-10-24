@@ -61,4 +61,6 @@
 % El índice K debe ser mayor que 0.
 remove_at(X, [X|T], 1, T).
 remove_at(X, [H|T], K, [H|R]) :- K > 1, K1 is K - 1, remove_at(X, T, K1, R).
+% Ejemplo de uso:
+% remove_at(X, [a, b, c, d, e], 3, R), writeln(X), writeln(R), halt.
 % ----------------------------------------------

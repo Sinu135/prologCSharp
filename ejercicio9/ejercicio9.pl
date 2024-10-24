@@ -83,4 +83,6 @@ transfer(X, [], [], []).
 transfer(X, [Y|Ys], [], [Y|Ys]) :- X \= Y.
 % Si el siguiente elemento es igual, agrégalo a la sublista.
 transfer(X, [X|Xs], [X|Ys], Rest) :- transfer(X, Xs, Ys, Rest).
+% Ejemplo de uso:
+% pack([a,a,b,b,c,a,a,a,d], R), write(R), nl, halt.
 % ----------------------------------------------

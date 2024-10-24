@@ -94,4 +94,6 @@ range(I, K, [I|R]) :- I < K, I1 is I + 1, range(I1, K, R).
 % Extrae N números aleatorios de un rango dado.
 % Utiliza la función range para generar la lista de números y luego selecciona aleatoriamente.
 lotto(N, M, L) :- range(1, M, R), rnd_select(R, N, L).
+%% Ejemplo de uso:
+% lotto(6, 49, L), writeln(L), halt.
 % ----------------------------------------------

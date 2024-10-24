@@ -75,4 +75,6 @@ reverse_list([H|T], Acc, R) :- reverse_list(T, [H|Acc], R).
 % Verifica si una lista es un palíndromo.
 % Una lista es un palíndromo si es igual a su inversa.
 palindrome(L) :- reverse_list(L, L).
+% Ejemplo de uso:
+% palindrome([r,a,c,e,c,a,r]), write(true), nl, halt.
 % ----------------------------------------------

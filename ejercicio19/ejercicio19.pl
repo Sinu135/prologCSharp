@@ -59,4 +59,6 @@ split([H|T], N, [H|L1], L2) :- N > 0, N1 is N - 1, split(T, N1, L1, L2).
 % Rota una lista N lugares a la izquierda.
 % Utiliza la longitud de la lista para manejar rotaciones mayores que la longitud.
 rotate(L, N, R) :- length(L, Len), N1 is N mod Len, split(L, N1, L1, L2), append(L2, L1, R).
+% Ejemplo de uso:
+% rotate([a, b, c, d, e, f, g], 2, R), writeln(R), halt.
 % ----------------------------------------------

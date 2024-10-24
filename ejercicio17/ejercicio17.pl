@@ -54,4 +54,6 @@
 % La longitud de la primera parte está dada por el segundo argumento.
 split(L, 0, [], L).
 split([H|T], N, [H|L1], L2) :- N > 0, N1 is N - 1, split(T, N1, L1, L2).
+% Ejemplo de uso:
+% split([a, b, c, d, e, f, g], 3, L1, L2), writeln(L1), writeln(L2), halt.
 % ----------------------------------------------

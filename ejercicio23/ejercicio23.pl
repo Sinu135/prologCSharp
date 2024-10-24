@@ -69,4 +69,6 @@ element_at(X, [_|T], K) :- K > 1, K1 is K - 1, element_at(X, T, K1).
 % Utiliza un generador de números aleatorios y elimina los elementos seleccionados.
 rnd_select(_, 0, []).
 rnd_select(L, N, [X|R]) :- length(L, Len), random(1, Len, I), element_at(X, L, I), delete(L, X, L1), N1 is N - 1, rnd_select(L1, N1, R).
+% Ejemplo de uso:
+% rnd_select([a, b, c, d, e, f], 3, R), writeln(R), halt.
 % ----------------------------------------------

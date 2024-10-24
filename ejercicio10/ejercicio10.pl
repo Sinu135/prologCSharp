@@ -92,4 +92,6 @@ encode(L, R) :- pack(L, P), transform(P, R).
 % Transforma sublistas en parejas (N, X), donde N es la cantidad de elementos.
 transform([], []).
 transform([[X|Xs]|Ys], [[N,X]|Zs]) :- length([X|Xs], N), transform(Ys, Zs).
+% Ejemplo de uso:
+% encode([a,a,b,b,c,a,a,a,d], R), write(R), nl, halt.
 % ----------------------------------------------

@@ -108,4 +108,6 @@ transform([[X|Xs]|Ys], [[N,X]|Zs]) :- length([X|Xs], N), transform(Ys, Zs).
 
 % Ordena una lista de listas de acuerdo con la frecuencia de la longitud de las sublistas.
 length_frequency(L, F) :- map_list_to_pairs(length, L, P), msort(P, SP), encode(SP, F).
+% Ejemplo de uso:
+% length_frequency([[a], [b, c], [d, e, f], [g, h, i, j]], F), writeln(F), halt.
 % ----------------------------------------------

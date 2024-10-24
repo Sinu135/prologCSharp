@@ -44,4 +44,6 @@
 % El índice K debe ser mayor que 0.
 element_at(X, [X|_], 1).
 element_at(X, [_|T], K) :- K > 1, K1 is K - 1, element_at(X, T, K1).
+% Ejemplo de uso:
+% lement_at(X, [a, b, c, d], 2), write(X), nl, halt.
 % ----------------------------------------------

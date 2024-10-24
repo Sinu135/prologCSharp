@@ -61,4 +61,6 @@ my_flatten([], []).
 my_flatten([H|T], Flat) :- my_flatten(H, FH), my_flatten(T, FT), append(FH, FT, Flat).
 % Si la cabeza no es una lista, simplemente agrégala al resultado.
 my_flatten(X, [X]) :- X \= [], \+ is_list(X).
+% Ejemplo de uso:
+% my_flatten([[a,b],[c,d]], R), write(R), nl, halt.
 % ----------------------------------------------

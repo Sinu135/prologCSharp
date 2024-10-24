@@ -47,4 +47,6 @@
 dupli([], []).
 % Caso recursivo: duplica el primer elemento y continúa con el resto.
 dupli([H|T], [H,H|R]) :- dupli(T, R).
+% Ejemplo de uso:
+% dupli([a, b, c, d], R), writeln(R), halt.
 % ----------------------------------------------

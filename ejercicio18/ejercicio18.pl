@@ -54,4 +54,6 @@
 slice([H|_], 1, 1, [H]).
 slice([H|T], 1, K, [H|R]) :- K > 1, K1 is K - 1, slice(T, 1, K1, R).
 slice([_|T], I, K, R) :- I > 1, I1 is I - 1, K1 is K - 1, slice(T, I1, K1, R).
+% Ejemplo de uso:
+% slice([a, b, c, d, e, f, g], 2, 4, R), writeln(R), halt.
 % ----------------------------------------------
