@@ -4,18 +4,32 @@
 EJERCICIOS = ejercicio1 ejercicio2 ejercicio3 ejercicio4 ejercicio5 \
              ejercicio6 ejercicio7 ejercicio8 ejercicio9 ejercicio10 \
              ejercicio11 ejercicio12 ejercicio13 ejercicio14 ejercicio15 \
-             ejercicio16 ejercicio17 ejercicio18 ejercicio19 ejercicio20 \
-             ejercicio21 ejercicio22 ejercicio23 ejercicio24 ejercicio25 \
-             ejercicio26 ejercicio27 ejercicio28 ejercicio29 ejercicio30
+             ejercicio26 ejercicio27 ejercicio28 ejercicio29 ejercicio30 \
+			 ejercicio31 ejercicio32 ejercicio33 ejercicio34 ejercicio35 \
+             ejercicio36 ejercicio37 ejercicio38 ejercicio39 ejercicio40 \
+             ejercicio41 ejercicio42 ejercicio43 ejercicio44 ejercicio45 \
+             ejercicio46 ejercicio47 ejercicio48 ejercicio49 ejercicio50 \
+
+EJERCICIOS3150 = ejercicio31 ejercicio32 ejercicio33 ejercicio34 ejercicio35 \
+             ejercicio36 ejercicio37 ejercicio38 ejercicio39 ejercicio40 \
+             ejercicio41 ejercicio42 ejercicio43 ejercicio44 ejercicio45 \
+             ejercicio46 ejercicio47 ejercicio48 ejercicio49 ejercicio50 \
+
+
 
 .PHONY: all run clean
 
 # Objetivo por defecto
-all: run
 
+all: run50
 # Ejecutar make run en cada directorio de ejercicios
-run:
+run50:
 	@for dir in $(EJERCICIOS); do \
+		$(MAKE) -C $$dir run; \
+	done
+
+run3150:
+	@for dir in $(EJERCICIOS3150); do \
 		$(MAKE) -C $$dir run; \
 	done
 

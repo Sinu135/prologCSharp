@@ -1,6 +1,6 @@
 % ===============================================
 % Autor: Velazquez Duran Sinuhe de Jesus
-% Fecha: 22 de octubre de 2024
+% Fecha: 24 de octubre de 2024
 % Descripción: 
 % ===============================================
 
